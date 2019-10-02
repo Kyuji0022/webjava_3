@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ListView</title>
+</head>
+<body>
+    <form method="post"action="@{CombatTop}"th:object="${commandForm}">
+        キャラクター作成画面<br>
+        <tr>
+        	<th>職業:</th>
+        	<input type="radio" name="戦士" value="warrior" />
+        	<input type="radio" name="魔法使い" value="witch"/>
+        </tr>
+		<th>名前:</th>
+		<input type="text" name="name"/>
+		<input type="submit" value="次へ" />
+    </form>
+</body>
+</html>
